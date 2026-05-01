@@ -1,4 +1,5 @@
-import { JSONFilePreset } from 'lowdb/node';
+import { Low } from 'lowdb';
+import { JSONFile } from 'lowdb/node';
 import { nanoid } from 'nanoid';
 import bcrypt from 'bcryptjs';
 import { fileURLToPath } from 'url';
@@ -10,7 +11,10 @@ const defaultData = {
 };
 
 const dbFilePath = fileURLToPath(new URL('./db.json', import.meta.url));
-export const db = await JSONFilePreset(dbFilePath, defaultData);
+const adapter = new JSONFile(dbFilePath);
+export const db = new Low(adapter, defaultData);
+await db.read();
+db.data ||= defaultData;
 
 if (db.data.users.length === 0) {
   const adminId = nanoid();
