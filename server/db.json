@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "id": "ABzEUfItUVSRgdU3XKCLZ",
+      "name": "Admin User",
+      "email": "admin@taskflow.com",
+      "passwordHash": "$2b$10$vcVQJ6.8mNuvnmvncZwLveiSGU1yoP4BYBMRveuU5.VRnRpy/8gk6",
+      "role": "admin",
+      "createdAt": "2026-05-01T08:42:56.530Z"
+    },
+    {
+      "id": "idEV1saD70rJWDd2Ac6Cv",
+      "name": "Member User",
+      "email": "member@taskflow.com",
+      "passwordHash": "$2b$10$sr7IBPV.WU9RPf2A/zz0IOygZTammJmz7OISoJoen814cuIK2uEQ2",
+      "role": "member",
+      "createdAt": "2026-05-01T08:42:56.717Z"
+    },
+    {
+      "id": "tuTi9aJgvZPtEi_cOJIDt",
+      "name": "Ashish Kumar Prajapati",
+      "email": "ashish280971@gmail.com",
+      "passwordHash": "$2b$10$OSU9S2UxI7gfr0B4sSjWpuLNGg18m8kablDKKorSRq9bCvJPeBc4S",
+      "role": "admin",
+      "createdAt": "2026-05-01T08:47:59.060Z"
+    },
+    {
+      "id": "Q4OGSmInZjZ7Y_SzrFzXF",
+      "name": "Ashish Kumar",
+      "email": "hkjbgkjb@gmail.com",
+      "passwordHash": "$2b$10$I1bRo88JP2R/rv4wNskSlOZAlSJy4P9Lwow2IE5YKW/i62y41Aq1u",
+      "role": "admin",
+      "createdAt": "2026-05-01T08:50:43.722Z"
+    },
+    {
+      "id": "1TT4e3U0-u7I_PLWZI-Fk",
+      "name": "madhurg",
+      "email": "hkjbgkjb1@gmail.com",
+      "passwordHash": "$2b$10$QgPJ3Ybutf3uFtpsk.1EEeQdismw3MO.VcGJEx7IfDLYA5VFmjtp.",
+      "role": "admin",
+      "createdAt": "2026-05-01T08:51:41.684Z"
+    },
+    {
+      "id": "LuChYvb4QHeCF5ZLDIbJV",
+      "name": "Bhoomika",
+      "email": "hkjbgkjb12@gmail.com",
+      "passwordHash": "$2b$10$6ncDVO77vVeDrgk7X.9voueSTBeQbKovQL2bxe5XDChDQhValQ4te",
+      "role": "admin",
+      "createdAt": "2026-05-01T08:52:37.975Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "eWFPfqc8cgtxhRo6A5dNm",
+      "name": "Website Redesign",
+      "description": "Revamp landing page and dashboard UI",
+      "ownerId": "ABzEUfItUVSRgdU3XKCLZ",
+      "memberIds": [
+        "ABzEUfItUVSRgdU3XKCLZ",
+        "idEV1saD70rJWDd2Ac6Cv"
+      ],
+      "dueDate": "2026-05-11T08:42:56.718Z",
+      "createdAt": "2026-05-01T08:42:56.718Z"
+    },
+    {
+      "id": "hd6wyxOiWTbRfiq5Ib1f3",
+      "name": "Website",
+      "description": "madhu3678",
+      "ownerId": "LuChYvb4QHeCF5ZLDIbJV",
+      "memberIds": [
+        "LuChYvb4QHeCF5ZLDIbJV",
+        "ABzEUfItUVSRgdU3XKCLZ",
+        "idEV1saD70rJWDd2Ac6Cv",
+        "tuTi9aJgvZPtEi_cOJIDt",
+        "Q4OGSmInZjZ7Y_SzrFzXF",
+        "1TT4e3U0-u7I_PLWZI-Fk"
+      ],
+      "dueDate": "2026-05-01",
+      "createdAt": "2026-05-01T08:53:32.210Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "ARwe5YlV9Dof_syrmAQUk",
+      "title": "Build login page",
+      "description": "Create responsive authentication UI and validation",
+      "status": "todo",
+      "priority": "high",
+      "projectId": "eWFPfqc8cgtxhRo6A5dNm",
+      "assigneeId": "idEV1saD70rJWDd2Ac6Cv",
+      "createdBy": "ABzEUfItUVSRgdU3XKCLZ",
+      "dueDate": "2026-05-03T08:42:56.718Z",
+      "createdAt": "2026-05-01T08:42:56.718Z"
+    },
+    {
+      "id": "aIksr6nd8dIvxiWcEJCYH",
+      "title": "Setup API middleware",
+      "description": "Add auth and role based middleware to Express backend",
+      "status": "inprogress",
+      "priority": "medium",
+      "projectId": "eWFPfqc8cgtxhRo6A5dNm",
+      "assigneeId": "ABzEUfItUVSRgdU3XKCLZ",
+      "createdBy": "ABzEUfItUVSRgdU3XKCLZ",
+      "dueDate": "2026-05-04T08:42:56.718Z",
+      "createdAt": "2026-05-01T08:42:56.718Z"
+    }
+  ]
+}
